@@ -1,0 +1,7 @@
+#app .container {
+  min-height: 100vh;
+}
+#app, #app .container {
+  display: flex;
+  flex-direction: column;
+}
