@@ -4,6 +4,7 @@ const ReactDOM = require('react-dom')
 const MyHeader = require('./my-header.jsx')
 const OrigMain = require('./orig-main.jsx')
 const MyFooter = require('./my-footer.jsx')
+const MyBody = require('./my-body.jsx')
 
 class Content extends React.Component {
   constructor(props) {
@@ -14,15 +15,13 @@ class Content extends React.Component {
     console.log('Sumit clicked; no action')
   }
   render() {
-    this.prompt = 'Please enter your email to win a Sublime Text license'
+
     return (
 
-      <div className="container">
-
+      <div className="content">
         <MyHeader />
-        <OrigMain />
+        <MyBody />
         <MyFooter />
-        
       </div>
     )
   }
