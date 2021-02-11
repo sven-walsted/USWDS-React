@@ -8,7 +8,7 @@ const MyFooter = (props) =>
             <div className="grid-container usa-footer__return-to-top">
                 <a href="#">Return to top</a>
             </div>
-            <div className="usa-footer__primary-section">
+            <div className="usa-footer__primary-section bg-primary-light">
                 <nav className="usa-footer__nav" aria-label="Footer navigation">
                     <ul className="grid-row grid-gap">
                         <li className="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
@@ -30,7 +30,7 @@ const MyFooter = (props) =>
                 </nav>
             </div>
 
-            <div className="usa-footer__secondary-section">
+            <div className="usa-footer__secondary-section bg-primary">
                 <div className="grid-container">
                     <div className="grid-row grid-gap">
                         <div className="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
