@@ -24,7 +24,7 @@ class Content extends React.Component {
         { /* Shades page when mini-menu is active */}
         <div className="usa-overlay"></div>
         <MyHeader />
-        <MyBody />
+        <Main />
         <MyFooter />
       </div>
     )
