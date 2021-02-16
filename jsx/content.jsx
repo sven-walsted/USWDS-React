@@ -16,7 +16,6 @@ class Content extends React.Component {
     console.log('Sumit clicked; no action')
   }
   render() {
-
     return (
       <div className="content">
         <a className="usa-skipnav" href="#main-content">Skip to main content</a>

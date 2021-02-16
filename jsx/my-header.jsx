@@ -1,14 +1,14 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
+const { Link } = require('react-router-dom')
 
 const MyHeader = (props) =>
     <div>
-
         <header className="usa-header usa-header--basic usa-header--megamenu bg-primary-light">
             <div className="usa-nav-container">
                 <div className="usa-navbar">
                     <div className="usa-logo" id="basic-mega-logo">
-                        <em className="usa-logo__text"><a href="/" title="Home" aria-label="Home">Project title</a></em>
+                        <em className="usa-logo__text"><a href="/" title="Home" aria-label="Home">USWDS React Demo</a></em>
                     </div>
                     <button className="usa-menu-btn">Menu</button>
                 </div>
@@ -19,7 +19,7 @@ const MyHeader = (props) =>
                             <a className="usa-nav__link" href="basicHeader.html"><span>Basic Header</span></a>
                         </li>
                         <li className="usa-nav__primary-item">
-                            <a className="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+                            <Link className="usa-nav__link" to="/login"><span>Login</span></Link>
                         </li>
                         <li className="usa-nav__primary-item">
                             <a className="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
@@ -28,7 +28,6 @@ const MyHeader = (props) =>
                 </nav>
             </div>
         </header>
-
     </div>;
 
 module.exports = MyHeader
