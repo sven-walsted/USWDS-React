@@ -3,7 +3,7 @@ const ReactDOM = require('react-dom')
 
 const LoginBody = () => (
     <main id="main-content" className="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs">
-        <div className="bg-base-lightest">
+        <div className="bg-accent-cool-lighter">
             <section className="grid-container usa-section">
                 <div className="grid-row flex-justify-center">
                     <div className="grid-col-12 tablet:grid-col-8 desktop:grid-col-6">

@@ -6,10 +6,7 @@ const HomeSideNav = () => (
         <nav aria-label="Secondary navigation">
             <ul className="usa-sidenav">
                 <li className="usa-sidenav__item">
-                    <a href="">Parent link</a>
-                </li>
-                <li className="usa-sidenav__item">
-                    <a href="" className="usa-current">Current page</a>
+                    <a href="" className="usa-current">Home</a>
                     <ul className="usa-sidenav__sublist">
                         <li className="usa-sidenav__item">
                             <a href="">Child link</a>
@@ -43,7 +40,7 @@ const HomeSideNav = () => (
                     </ul>
                 </li>
                 <li className="usa-sidenav__item">
-                    <a href="">Parent link</a>
+                    <a href="">Reports</a>
                 </li>
             </ul>
         </nav>

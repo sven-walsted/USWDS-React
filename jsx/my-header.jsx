@@ -16,13 +16,16 @@ const MyHeader = (props) =>
                     <button className="usa-nav__close"><img src="assets/img/close.svg" role="img" alt="close" /></button>
                     <ul className="usa-nav__primary usa-accordion">
                         <li className="usa-nav__primary-item">
-                            <a className="usa-nav__link" href="basicHeader.html"><span>Basic Header</span></a>
+                            <Link className="usa-nav__link" to="/home"><span>Home</span></Link>
                         </li>
                         <li className="usa-nav__primary-item">
-                            <Link className="usa-nav__link" to="/login"><span>Login</span></Link>
+                            <Link className="usa-nav__link" to="nameForm"><span>User Info</span></Link>
                         </li>
                         <li className="usa-nav__primary-item">
-                            <a className="usa-nav__link" href="javascript:void(0)"><span>Simple link</span></a>
+                            <a className="usa-nav__link" href="javascript:void(0)"><span>Launch Codes</span></a>
+                        </li>
+                        <li className="usa-nav__primary-item">
+                            <Link className="usa-nav__link" to="/"><span>Login</span></Link>
                         </li>
                     </ul>
                 </nav>
