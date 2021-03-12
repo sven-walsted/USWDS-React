@@ -6,7 +6,6 @@ const UserStepIndicator = require('./UserStepIndicator.jsx')
 class AddressForm extends React.Component {
     constructor(props) {
         super(props)
-
         this.state = {
             // values: usa-step-indicator__segment--complete, usa-step-indicator__segment--current, ''
             steps: [
@@ -22,9 +21,7 @@ class AddressForm extends React.Component {
         return (
             <main id="main-content" className="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs">
                 <div className="bg-accent-cool-lighter">
-
                     <section className="grid-container">
-
                         <div className="grid-row flex-justify-left bg-white">
                             <div className="tablet:grid-col-8 desktop:grid-col-12 padding-x-5 padding-y-2">
                                 <UserStepIndicator {...this.state} />
@@ -32,9 +29,7 @@ class AddressForm extends React.Component {
                         </div>
                         <div className="grid-row flex-justify-left bg-white">
                             <div className="tablet:grid-col-8 desktop:grid-col-12 ">
-
                                 <div className="bg-white padding-y-2 padding-x-5">
-
                                     <form className="usa-form usa-form--large">
                                         <fieldset className="usa-fieldset">
                                             <legend className="usa-legend usa-legend--large">Mailing address</legend>
@@ -45,7 +40,6 @@ class AddressForm extends React.Component {
                                                 Street address <abbr title="required" className="usa-hint usa-hint--required">*</abbr>
                                             </label>
                                             <input className="usa-input" id="mailing-address-1" name="mailing-address-1" type="text" required />
-
                                             <div className="grid-row grid-gap">
                                                 <div className="mobile-lg:grid-col-8">
                                                     <label className="usa-label" htmlFor="apt-suite-other">Unit type</label>
@@ -86,10 +80,8 @@ class AddressForm extends React.Component {
                                                     <input className="usa-input" id="apt-floor-suite-no" name="apt-floor-suite-no" type="text" />
                                                 </div>
                                             </div>
-
                                             <label className="usa-label" htmlFor="city">City <abbr title="required" className="usa-hint usa-hint--required">*</abbr></label>
                                             <input className="usa-input" id="city" name="city" type="text" required />
-
                                             <label className="usa-label" htmlFor="state">State <abbr title="required" className="usa-hint usa-hint--required">*</abbr></label>
                                             <div className="usa-combo-box">
                                                 <select className="usa-select" id="state" name="state" required>
@@ -159,24 +151,16 @@ class AddressForm extends React.Component {
                                                     <option value="AP">AP - Armed Forces Pacific</option>
                                                 </select>
                                             </div>
-
                                             <label className="usa-label" htmlFor="zip">ZIP code <abbr title="required" className="usa-hint usa-hint--required">*</abbr></label>
                                             <input className="usa-input usa-input--medium" id="zip" name="zip" type="text" pattern="[\d]{5}(-[\d]{4})?" required />
                                         </fieldset>
                                     </form>
-
-
-
                                 </div>
-
-
                             </div>
                         </div>
                     </section>
-
                 </div>
             </main >
-
         )
     }
 }

@@ -2,7 +2,6 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 
 const OrigMain = (props) =>
-
     <main>
         <p>{this.prompt}</p>
         <div className="form-group">

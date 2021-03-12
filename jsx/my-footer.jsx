@@ -29,7 +29,6 @@ const MyFooter = (props) =>
                     </ul>
                 </nav>
             </div>
-
             <div className="usa-footer__secondary-section bg-primary">
                 <div className="grid-container">
                     <div className="grid-row grid-gap">
@@ -80,10 +79,7 @@ const MyFooter = (props) =>
                 </div>
             </div>
         </footer>
-
-
         <div className="usa-identifier">
-
             <section className="usa-identifier__section usa-identifier__section--masthead" aria-label="Agency identifier">
                 <div className="usa-identifier__container">
                     <div className="usa-identifier__logos">

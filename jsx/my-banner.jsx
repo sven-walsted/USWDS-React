@@ -30,12 +30,11 @@ const MyBanner = (props) =>
                                 <p>
                                     <strong>
                                         Official websites use .gov
-                                </strong>
+                                    </strong>
                                     <br />
                                 A <strong>.gov</strong> website belongs to an official government organization in the
                                 United States.
-
-                            </p>
+                                </p>
                             </div>
                         </div>
                         <div className="usa-banner__guidance tablet:grid-col-6">
@@ -58,7 +57,6 @@ const MyBanner = (props) =>
                                     </svg></span>
                                 ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share
                                 sensitive information only on official, secure websites.
-
                             </p>
                             </div>
                         </div>
