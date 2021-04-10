@@ -1,6 +1,8 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
+const { site } = require('../constants/site')
+
 const MyFooter = (props) =>
     <div>
 
@@ -8,7 +10,7 @@ const MyFooter = (props) =>
             <div className="grid-container usa-footer__return-to-top">
                 <a href="#">Return to top</a>
             </div>
-            <div className="usa-footer__primary-section bg-primary-light">
+            <div className={site.primaryFooterClass}>
                 <nav className="usa-footer__nav" aria-label="Footer navigation">
                     <ul className="grid-row grid-gap">
                         <li className="mobile-lg:grid-col-4 desktop:grid-col-auto usa-footer__primary-content">
@@ -29,15 +31,15 @@ const MyFooter = (props) =>
                     </ul>
                 </nav>
             </div>
-            <div className="usa-footer__secondary-section bg-primary">
+            <div className={site.secondaryFooterClass}>
                 <div className="grid-container">
                     <div className="grid-row grid-gap">
                         <div className="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
                             <div className="mobile-lg:grid-col-auto">
-                                <img className="usa-footer__logo-img" src="assets/img/logo-img.png" alt="" />
+                                <img className="usa-footer__logo-img" src="../assets/img/logo-img.png" alt="" />
                             </div>
                             <div className="mobile-lg:grid-col-auto">
-                                <h3 className="usa-footer__logo-heading">Name of Agency</h3>
+                                <h3 className="usa-footer__logo-heading">{site.agencyName}</h3>
                             </div>
                         </div>
                         <div className="usa-footer__contact-links mobile-lg:grid-col-6">
@@ -84,14 +86,14 @@ const MyFooter = (props) =>
                 <div className="usa-identifier__container">
                     <div className="usa-identifier__logos">
                         <a href="javascript:void(0);" className="usa-identifier__logo">
-                            <img className="usa-identifier__logo-img" src="assets/img/circle-gray-20.svg"
+                            <img className="usa-identifier__logo-img" src="../assets/img/circle-gray-20.svg"
                                 alt="&lt;Parent agency&gt; logo" role="img" />
                         </a>
                     </div>
                     <div className="usa-identifier__identity" aria-label="Agency description">
                         <p className="usa-identifier__identity-domain">domain.gov</p>
                         <p className="usa-identifier__identity-disclaimer">An official website of the <a
-                            href="javascript:void(0);">&lt;Parent agency&gt;</a></p>
+                            href="javascript:void(0);">{site.agencyDepartment}</a></p>
                     </div>
                 </div>
             </section>

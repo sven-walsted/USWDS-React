@@ -2,14 +2,13 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const { Route, Switch } = require('react-router-dom')
 
-const MyBody = require('./my-body.jsx')
-const HomeSideNav = require('./HomeSideNav.jsx')
-const HomeBody = require('./HomeBody.jsx')
-const LoginSideNav = require('./LoginSideNav.jsx')
-const LoginBody = require('./LoginBody.jsx')
-const UserInfoSideNav = require('./UserInfoSideNav.jsx')
-const NameForm = require('./NameForm.jsx')
-const AddressForm = require('./AddressForm.jsx')
+const HomeSideNav = require('./landing/HomeSideNav.jsx')
+const HomeBody = require('./landing/HomeBody.jsx')
+const LoginSideNav = require('./login/LoginSideNav.jsx')
+const LoginBody = require('./login/LoginBody.jsx')
+const UserInfoSideNav = require('./user/UserInfoSideNav.jsx')
+const NameForm = require('./user/NameForm.jsx')
+const AddressForm = require('./user/AddressForm.jsx')
 
 const Main = () => (
   <div>

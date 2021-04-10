@@ -1,11 +1,10 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
-const MyBanner = require('./my-banner.jsx')
-const MyHeader = require('./my-header.jsx')
+const MyBanner = require('../site/layouts/my-banner.jsx')
+const MyHeader = require('../site/layouts/my-header.jsx')
 const Main = require('./Main.jsx')
-const MyBody = require('./my-body.jsx')
-const MyFooter = require('./my-footer.jsx')
+const MyFooter = require('../site/layouts/my-footer.jsx')
 
 class Content extends React.Component {
   constructor(props) {

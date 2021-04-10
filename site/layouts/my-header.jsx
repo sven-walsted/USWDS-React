@@ -2,13 +2,15 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const { Link } = require('react-router-dom')
 
+const { site } = require('../constants/site')
+
 const MyHeader = (props) =>
     <div>
-        <header className="usa-header usa-header--basic usa-header--megamenu bg-primary-light">
+        <header className={site.headerClass}>
             <div className="usa-nav-container">
                 <div className="usa-navbar">
                     <div className="usa-logo" id="basic-mega-logo">
-                        <em className="usa-logo__text"><a href="/" title="Home" aria-label="Home">USWDS React Demo</a></em>
+                        <em className="usa-logo__text"><a href="/" title="Home" aria-label="Home">{site.appName}</a></em>
                     </div>
                     <button className="usa-menu-btn">Menu</button>
                 </div>

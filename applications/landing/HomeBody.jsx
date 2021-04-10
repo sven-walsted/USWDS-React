@@ -1,10 +1,12 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
+const { site } = require('../../site/constants/site')
+
 const HomeBody = () => (
     <main className="usa-layout-docs__main desktop:grid-col-9 usa-prose usa-layout-docs" id="main-content">
         <h1>
-            Page heading (h1)
+        {site.projectTitle}
         </h1>
         <p className="usa-intro">The page heading communicates the main focus of the page. Make your page
         heading descriptive and keep it succinct.</p>

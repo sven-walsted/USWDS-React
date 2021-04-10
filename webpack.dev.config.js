@@ -3,7 +3,7 @@ const webpack = require('webpack')
 module.exports = {
   entry: [
     'webpack-dev-server/client/?http://localhost:3000',
-    './jsx/app.jsx'
+    './applications/app.jsx'
   ],
   output: {
     publicPath: 'js/',
