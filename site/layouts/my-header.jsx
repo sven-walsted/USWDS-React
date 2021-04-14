@@ -21,7 +21,7 @@ const MyHeader = (props) =>
                             <Link className="usa-nav__link" to="/home"><span>Home</span></Link>
                         </li>
                         <li className="usa-nav__primary-item">
-                            <Link className="usa-nav__link" to="nameForm"><span>User Info</span></Link>
+                            <Link className="usa-nav__link" to="name"><span>User Info</span></Link>
                         </li>
                         <li className="usa-nav__primary-item">
                             <a className="usa-nav__link" href="javascript:void(0)"><span>Launch Codes</span></a>

@@ -1,7 +1,7 @@
 const React = require('react')
 const ReactDOM = require('react-dom')
 
-const HomeSideNav = () => (
+const SideNav = () => (
     <div className="usa-layout-docs__sidenav desktop:grid-col-3">
         <nav aria-label="Secondary navigation">
             <ul className="usa-sidenav">
@@ -47,4 +47,4 @@ const HomeSideNav = () => (
     </div>
 )
 
-module.exports = HomeSideNav
+module.exports = SideNav

@@ -2,7 +2,7 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const { Link } = require('react-router-dom')
 
-const UserInfoSideNav = () => (
+const SideNav = () => (
     <div className="usa-layout-docs__sidenav desktop:grid-col-3">
         <nav aria-label="Secondary navigation">
             <ul className="usa-sidenav">
@@ -11,10 +11,10 @@ const UserInfoSideNav = () => (
                     <ul className="usa-sidenav__sublist">
                         <ul className="usa-sidenav__sublist">
                             <li className="usa-sidenav__item">
-                                <Link className="usa-sidenav__item usa-current" to="nameForm">User name</Link>
+                                <Link className="usa-sidenav__item usa-current" to="name">User name</Link>
                             </li>
                             <li className="usa-sidenav__item">
-                                <Link className="usa-sidenav__item" to="addressForm">Mailing address</Link>
+                                <Link className="usa-sidenav__item" to="address">Mailing address</Link>
                             </li>
                             <li className="usa-sidenav__item">
                                 <a href="">Supporting documents</a>
@@ -33,4 +33,4 @@ const UserInfoSideNav = () => (
     </div>
 )
 
-module.exports = UserInfoSideNav
+module.exports = SideNav
