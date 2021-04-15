@@ -10,23 +10,21 @@ const Address = require('./user/Address.jsx')
 const Main = () => (
   <div>
     { /* Grid */}
-    <div className="usa-section">
-      <Switch>
-        <Route exact path='/'>
-          <Login />
-        </Route>
-        <Route exact path='/home'>
-          <Home />
-        </Route>
-        <Route exact path='/name'>
-          <Name />
-        </Route>
-        <Route exact path='/address'>
-          <Address />
-        </Route>
-      </Switch>
-    </div>
-  </div >
+    <Switch>
+      <Route exact path='/'>
+        <Login />
+      </Route>
+      <Route exact path='/home'>
+        <Home />
+      </Route>
+      <Route exact path='/name'>
+        <Name />
+      </Route>
+      <Route exact path='/address'>
+        <Address />
+      </Route>
+    </Switch>
+  </div>
 )
 
 module.exports = Main
