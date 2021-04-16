@@ -6,10 +6,9 @@ const { Link } = require('react-router-dom')
  * name
  * path
  * isCurrent
- * isPrimaryNav 
  */
 const UsaMenuItem = (props) => {
-    const linkClass = (props.isCurrent != undefined && props.isCurrent) ? "usa-nav__link usa-current" : "usa-nav__link"
+    const linkClass = (props.isCurrent != undefined && props.isCurrent) ? "usa-current" : ""
     return (
         <li className="usa-nav__primary-item">
             <Link className={linkClass} to={props.path}><span>{props.name}</span></Link>
